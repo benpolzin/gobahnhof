@@ -9,7 +9,7 @@ Thanks to:
 * http://gohugo.io/templates/go-templates/
 * https://golang.org/doc/effective_go.html#web_server
 
-This project is what I'm using to learn Go.
+I am using this project to [http://www.golang-book.com/](learn Go) and general software development concepts.
 
 ##Goals for gobahnhof
 1. Standalone web app that engineers can run on a laptop and capture PRT files from Cisco Jabber and Cisco endpoints that support PRT.
