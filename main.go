@@ -77,9 +77,49 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 	io.Copy(f, file)
 }
 
+// handle POST of jabber file upload. referenced by manual upload and PRT
+func uploadjabberHandler(w http.ResponseWriter, r *http.Request) {
+	r.ParseMultipartForm(32 << 20)
+	file, handler, err := r.FormFile("zipFileName")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer file.Close()
+	fmt.Fprintf(w, "%v", handler.Header)
+	f, err := os.OpenFile("./"+handler.Filename, os.O_WRONLY|os.O_CREATE, 0666)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer f.Close()
+	io.Copy(f, file)
+}
+
+// handle POST of phone file upload. referenced by manual upload and PRT
+func uploadphoneHandler(w http.ResponseWriter, r *http.Request) {
+	r.ParseMultipartForm(32 << 20)
+	file, handler, err := r.FormFile("prt_file")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer file.Close()
+	fmt.Fprintf(w, "%v", handler.Header)
+	f, err := os.OpenFile("./"+handler.Filename, os.O_WRONLY|os.O_CREATE, 0666)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer f.Close()
+	io.Copy(f, file)
+}
+
 // web server
 func main() {
 	http.HandleFunc("/go/", viewHandler)
 	http.HandleFunc("/upload/", uploadHandler)
+	http.HandleFunc("/jabberprt/", uploadjabberHandler)
+	http.HandleFunc("/phoneprt/", uploadphoneHandler)
 	http.ListenAndServe(":8080", nil)
 }
