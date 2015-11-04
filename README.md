@@ -19,13 +19,13 @@ I am using this project to [http://www.golang-book.com/](learn Go) and general s
 
 ## Usage
 ### Manual Upload
-*URL: ./go/upload/
+* URL: ./go/upload/
 ### Jabber PRT
-*URL: ./jabberprt/
-*Example: Use http://prt.widgets.co/jabberprt/ in the Cisco PSC field for Problem Report Server URL
+* URL: ./jabberprt/
+* Example: Use http://prt.widgets.co/jabberprt/ in the Cisco PSC field for Problem Report Server URL
 ### Phone PRT
-*URL: ./phoneprt/
-*Example: Use http://prt.widgets.co/phoneprt/ in the Cisco PSC field for Customer Support Upload URL
+* URL: ./phoneprt/
+* Example: Use http://prt.widgets.co/phoneprt/ in the Cisco PSC field for Customer Support Upload URL
 
 ## Version 0.1
 * Basic web server implemented
