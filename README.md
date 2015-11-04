@@ -13,7 +13,7 @@ Cisco References for PRT uploads:
 * [Cisco 8800 Admin Guide - PRT](http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cuipph/8811_8841_8851_8861/10_5/english/adminguide/P881_BK_C0632068_00_cisco-ip-phone-8811-8841/P881_BK_C0632068_00_cisco-ip-phone-8811-8841_chapter_01011.html#P881_RF_P46624A2_00)
 * [Cisco Jabber Admin Guide - PRT](http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/jabber/10_5/CJAB_BK_D6497E98_00_deployment-installation-guide-ciscojabber/CJAB_BK_D6497E98_00_deployment-installation-guide-ciscojabber_chapter_01001.html#CJAB_TK_C1B3C9BA_00)
 
-I am using this project to [http://www.golang-book.com/](learn Go) and general software development concepts.
+I am using this project to [learn Go](http://www.golang-book.com/) and general software development concepts.
 
 ## Goals for gobahnhof
 1. Standalone web app that engineers can run on a laptop and capture PRT files from Cisco Jabber and Cisco endpoints that support PRT.
